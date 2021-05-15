@@ -16,7 +16,7 @@ body {
         "nav skills skills skills"
         "nav skills skills skills"
         "nav contactMe contactMe contactMe";
-        grid-gap: 10px;
+        grid-gap: 20px;
 }
 
 .landing {
@@ -64,12 +64,15 @@ body {
     font-size: 1.75rem;
     display: flex;
     flex-wrap: wrap;
-    background-color: #120956;
+    justify-content: center;
+    background-color: black;
     color: white;
     padding: 10px;
     text-align: center;
     border-radius: 20px;
     position: relative;
+    width: auto;
+    height: auto;
 }
 
 .aboutMe {
@@ -78,24 +81,28 @@ body {
 
 .aboutMe h2 {
     display: block;
-    color: white;
-    margin: 10px 0px;
-    position: absolute;
-    left: 40%;
+    align-self: center;
+    margin: 0px;
 }
 
 .aboutMe p {
-    display: block;
-    position: absolute;
-    top: 18%;
+    align-self: center;
 }
 
 .aboutMe2 {
     grid-area: aboutMe2;
 }
 
+.aboutMe2 p {
+    align-self: center;
+}
+
 .aboutMe3 {
     grid-area: aboutMe3;
+}
+
+.aboutMe3 p {
+    align-self: center;
 }
 
 .aboutImg {
@@ -109,12 +116,25 @@ body {
     grid-area: aboutMeImg1;
 }
 
+#catsImg {
+    border-radius: 20px;
+}
+
 .aboutMeImg2 {
     grid-area: aboutMeImg2;
 }
 
+#circleGlassesImg {
+    border-radius: 20px;
+}
+
 .aboutMeImg3 {
     grid-area: aboutMeImg3;
+    height: 350px;
+}
+
+#spaceshipImg {
+    border-radius: 20px;
 }
 
 .skills {
