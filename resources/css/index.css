@@ -52,12 +52,20 @@ body {
 }
 
 .nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     position: fixed;
     border-radius: 0px 20px 20px 0px;
     grid-area: nav;
-    background-color: #f00303;
+    background-color: black;
     height: 100vh;
+    width: auto;
     margin: 0px;
+}
+
+.nav li {
+    margin: 50px 0px;
 }
 
 .about {
