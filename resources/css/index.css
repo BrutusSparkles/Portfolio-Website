@@ -5,16 +5,17 @@ body {
     width: 100%;
     background-color: black;
     font-family: "Roboto", sans-serif;
-    grid-template-rows: repeat(8, auto);
+    grid-template-rows: repeat(7, auto);
     grid-template-columns: 10% 1fr 1fr 1fr;
     grid-template-areas: 
         "nav landing landing landing"
+        "nav sh sh sh"
+        "nav skills skills skills"
         "nav aboutMeImg1 aboutMe aboutMe"
         "nav aboutMe2 aboutMe2 aboutMeImg2"
         "nav aboutMeImg3 aboutMe3 aboutMe3"
-        "nav skills skills skills"
-        "nav skills skills skills"
-        "nav skills skills skills"
+        "nav portfolioHeader portfolioHeader portfolioHeader"
+        "nav portfolio portfolio portfolio"
         "nav contactMe contactMe contactMe";
         grid-gap: 20px;
 }
@@ -51,6 +52,10 @@ body {
     border-radius: 20px;
 }
 
+img {
+    border: 5px solid white;
+}
+
 .nav {
     display: flex;
     flex-wrap: wrap;
@@ -63,6 +68,7 @@ body {
     height: 100vh;
     width: 10%;
     margin: 0px;
+    z-index: 5;
 }
 
 .nav li {
@@ -86,15 +92,20 @@ body {
 
 .aboutMe {
     grid-area: aboutMe;
+    margin-top: 30px;
 }
 
 .aboutMe h2 {
     display: block;
     align-self: center;
     margin: 0px;
+    width: 100%;
+    background-color: #120956;
+    border-radius: 20px;
+    border: 5px solid white;
 }
 
-.aboutMe p {
+.about p {
     align-self: center;
 }
 
@@ -102,16 +113,8 @@ body {
     grid-area: aboutMe2;
 }
 
-.aboutMe2 p {
-    align-self: center;
-}
-
 .aboutMe3 {
     grid-area: aboutMe3;
-}
-
-.aboutMe3 p {
-    align-self: center;
 }
 
 .aboutImg {
@@ -123,6 +126,7 @@ body {
 
 .aboutMeImg1 {
     grid-area: aboutMeImg1;
+    margin-top: 40px;
 }
 
 #catsImg {
@@ -146,6 +150,23 @@ body {
     border-radius: 20px;
 }
 
+.sh {
+    grid-area: sh;
+    color: white;
+    background-color: #120956;
+    border-radius: 20px;
+    border: 5px solid white;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2rem;
+}
+
+.sh h1 {
+    margin: 0px;
+}
+
 .skills {
     display: flex;
     flex-wrap: wrap;
@@ -153,20 +174,49 @@ body {
     background-color: black;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: auto;
     border-radius: 20px;
     justify-content: space-evenly;
 }
 
 .skill {
-    width: 20%;
+    width: auto;
     height: 45%;
     margin: 10px;
     border-radius: 20px;
     background-color: black;
     color: white;
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: center;
+}
+
+.skill h3 {
+    margin: 0px;
+}
+
+.portfolioHeader {
+    grid-area: portfolioHeader;
+    background-color: #120956;
+    border-radius: 20px;
+    border: 5px solid white;
+    color: white;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2rem;
+}
+
+.portfolioHeader h1 {
+    margin: 0px;
+}
+
+.portfolio {
+    grid-area: portfolio;
+    background-color: turquoise;
+    width: 100%;
+    height: 50vh;
+    border-radius: 20px;
 }
 
 .contactMe {
