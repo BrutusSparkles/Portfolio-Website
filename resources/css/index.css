@@ -216,7 +216,7 @@ img {
     grid-area: portfolio;
     background-color: black;
     width: 100%;
-    height: 85vh;
+    height: 65vh;
     border-radius: 20px;
     justify-content: space-between;
 }
@@ -237,6 +237,31 @@ img {
  
 .project img {
     border-radius: 20px;
+    width: 100%;
+}
+
+.button {
+    width: 100%;
+    height: auto;
+}
+
+.button h6 {
+    width: 100%;
+    margin: 0px;
+    margin-top: 10px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    background-color: limegreen;
+    border: 3px solid white;
+}
+ 
+.button p {
+    width: 100%;
+    margin: 0px;
+    margin-top: 10px;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    background-color: black;
 }
 
 .contactMe {
