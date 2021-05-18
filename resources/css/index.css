@@ -224,8 +224,7 @@ img {
 .project {
     height: 100%;
     width: 30%;
-    background-color: #120956;
-    border: 5px solid white;
+    background-color: black;
     border-radius: 20px;
     text-align: center;
     color: white;
@@ -234,6 +233,10 @@ img {
 .project h3 {
     font-size: 2rem;
     margin-top: 10px;
+}
+ 
+.project img {
+    border-radius: 20px;
 }
 
 .contactMe {
