@@ -56,6 +56,15 @@ img {
     border: 5px solid white;
 }
 
+a {
+    text-decoration: none;
+}
+.navHover {
+    font-size: 0.5rem;
+    text-align: center;
+    color: white;
+}
+
 .nav {
     display: flex;
     flex-wrap: wrap;
@@ -68,11 +77,14 @@ img {
     height: 100vh;
     width: 10%;
     margin: 0px;
+    bottom: 20px;
     z-index: 5;
 }
 
 .nav li {
     margin: 50px 0px;
+    background-color: black;
+    z-index: 5;
 }
 
 .about {
@@ -255,6 +267,15 @@ img {
     border: 3px solid white;
 }
  
+.button a {
+    color: white;
+    text-decoration: none;
+}
+
+.button a:hover {
+    color: green;
+}
+
 .button p {
     width: 100%;
     margin: 0px;
@@ -266,5 +287,13 @@ img {
 
 .contactMe {
     grid-area: contactMe;
-    background-color: firebrick;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 50px;
+}
+
+.contactMe p {
+    margin: 0px;
 }
