@@ -152,6 +152,8 @@ a {
 
 .aboutMeImg2 {
     grid-area: aboutMeImg2;
+    height: 350px;
+    width: 550px;
 }
 
 #circleGlassesImg {
