@@ -9,17 +9,15 @@ body {
     background-color: black;
     font-family: "Roboto", sans-serif;
     grid-template-rows: repeat(7, auto);
-    grid-template-columns: 10% 1fr 1fr 1fr;
+    grid-template-columns: 10% 45% 45%;
     grid-template-areas: 
-        "nav landing landing landing"
-        "nav sh sh sh"
-        "nav skills skills skills"
-        "nav aboutMeImg1 aboutMe aboutMe"
-        "nav aboutMe2 aboutMe2 aboutMeImg2"
-        "nav aboutMeImg3 aboutMe3 aboutMe3"
-        "nav portfolioHeader portfolioHeader portfolioHeader"
-        "nav portfolio portfolio portfolio"
-        "nav contactMe contactMe contactMe";
+        "nav landing landing"
+        "nav sh sh"
+        "nav skills skills"
+        "nav aboutMeImg aboutMe"
+        "nav portfolioHeader portfolioHeader"
+        "nav portfolio portfolio"
+        "nav contactMe contactMe";
         grid-gap: 20px;
 }
 
@@ -51,14 +49,12 @@ body {
 
 #loonImg {
     box-sizing: border-box;
+    border: 5px solid white;
+    box-sizing: border-box;
     width: 100%;
     height: 100%;
     border-radius: 20px;
     margin: 30px 0px;
-}
-
-img {
-    border: 5px solid white;
 }
 
 a {
@@ -73,22 +69,46 @@ a {
 
 .nav {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-content: center;
     position: fixed;
-    border-radius: 0px 20px 20px 0px;
     grid-area: nav;
     background-color: black;
     height: 100vh;
-    width: 10%;
-    margin: 0px;
+    width: 20vh;
     z-index: 5;
 }
 
+.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
 .nav li {
-    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    width: 120px;
+    justify-self: center;
+    justify-content: center;
     z-index: 5;
+}
+
+.navItem {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.navItem:hover {
+    box-sizing: border-box;
+    background-color: #120956;
+    border: 5px solid white;
 }
 
 .about {
@@ -108,7 +128,8 @@ a {
 
 .aboutMe {
     grid-area: aboutMe;
-    margin-top: 30px;
+    width: 100%;
+    height: auto;
 }
 
 .aboutMe h2 {
@@ -125,47 +146,25 @@ a {
     align-self: center;
 }
 
-.aboutMe2 {
-    grid-area: aboutMe2;
-}
-
-.aboutMe3 {
-    grid-area: aboutMe3;
-}
-
 .aboutImg {
-    background-color: wheat;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.aboutImg img {
+    box-sizing: border-box;
     border-radius: 20px;
-    height: 450px;
-    width: 600px;
+    border: 5px solid white;
+    height: auto;
+    width: 100%;
+    margin: 10px 0px;
 }
 
-.aboutMeImg1 {
-    grid-area: aboutMeImg1;
-    margin-top: 40px;
-}
-
-#catsImg {
-    border-radius: 20px;
-}
-
-.aboutMeImg2 {
-    grid-area: aboutMeImg2;
-    height: 350px;
-    width: 550px;
-}
-
-#circleGlassesImg {
-    border-radius: 20px;
-}
-
-.aboutMeImg3 {
-    grid-area: aboutMeImg3;
-    height: 350px;
-}
-
-#spaceshipImg {
-    border-radius: 20px;
+.aboutImages {
+    grid-area: aboutMeImg;
+    width: 100%;
+    height: auto;
 }
 
 .sh {
